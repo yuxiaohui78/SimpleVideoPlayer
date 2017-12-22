@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000">
+
+    <me.msile.train.player.simplevideoplayer.view.PlayerMeasureLayout
+        android:id="@+id/player_measure_fl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <me.msile.train.player.simplevideoplayer.view.SimpleVideoView
+            android:id="@+id/ijk_player"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <include
+            android:id="@+id/ijk_player_controller"
+            layout="@layout/player_controller_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </me.msile.train.player.simplevideoplayer.view.PlayerMeasureLayout>
+
+
+    <FrameLayout
+        android:id="@+id/title_fl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+    </FrameLayout>
+
+</FrameLayout>
